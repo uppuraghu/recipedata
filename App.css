@@ -1,0 +1,112 @@
+.recipe-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+  }
+  .recipe-container h1{
+    color: #ddd;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .search-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    height: 45px;
+  }
+  
+  .recipes-grid {
+    display: grid;
+    margin-top: -80px;
+    margin-left: -30px;
+    padding: 100px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+  
+  .recipe-card {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-left: 22px;
+    background-color: #ffffff;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(7, 221, 225, 221);
+    transition: transform 0.3s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  
+  .recipe-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .recipe-image {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  
+  .recipe-details {
+    text-align: left;
+    padding: 20px;
+    background: #000000;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgb(0, 255, 238);
+    margin-top: 20px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pagination span {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .pagination span:hover {
+    background: #ddd;
+    border-radius: 4px;
+  }
+  
+  .page__selected {
+    font-weight: bold;
+    background: #c8ff00;
+    border-radius: 4px;
+  }
+  
+  .firstPage, .lastPage {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  .selected-recipe-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000000;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    
+  }
