@@ -18,7 +18,7 @@ const Rep = () => {
   }, []);
 
   const fetchRecipes = async () => {
-    const response = await axios.get("https://dummyjson.com/recipes");
+    const response = await axios.get("https://api.jsonbin.io/v3/b/66faa41facd3cb34a88ed968");
     setRecipes(response.data.recipes);
   };
 
